@@ -2,8 +2,63 @@
 <html>
 <head>
 	<title>HecJaiRon</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/dataTables.bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery.js" ></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="./js/jquery-ui.min.js" ></script>
+	<script type="text/javascript" src="./js/jquery.dialogextend.min.js" ></script>
+	<script type="text/javascript" src="./js/jquery.dataTables.min.js" ></script>
+	<script type="text/javascript" src="./js/dataTables.bootstrap.min.js" ></script>
+	<script type="text/javascript" src="./js/functionsJs.js" ></script>
+	<style type="text/css">
+		.ui-dialog-titlebar-close{
+			height: 18px !important;
+		}
+		#menuBarMain{
+			margin-bottom: 0;
+		}
+	</style>
+
 </head>
 <body>
-	
+	<nav id="menuBarMain" class="navbar navbar-default">
+    	<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+      		<div id="navbar" class="navbar-collapse collapse">
+		        <ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Pagina One Page<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">--</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Pagina Dialog<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+							<a onclick="openWindows( './views/prueba.php', 'Prueba', 'PruebaWindows', 450, 460 )">Prueba</a></li>
+						</ul>
+					</li>
+		        </ul>
+          	</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+  	</nav>
+  	<div class="contentW">&nbsp;
+  	</div>
+  	<footer></footer>
 </body>
 </html>
