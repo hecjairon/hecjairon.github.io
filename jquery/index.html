@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="./js/jquery.js"></script>
+	</head>
+	<body>
+		<nav id="menu">
+			<ul>
+				<li id="tb1">Table 1</li>
+				<li id="tb2">Table 2</li>
+				<li id="tb3">Table 3</li>
+				<li id="tb4">Table 4</li>
+				<li id="tb5">Table 5</li>
+			</ul>
+		</nav>
+		<div id="content"></div>
+	</body>
+	<script>
+		$(function(){
+			$("#tb1").click(function(){
+				
+				$.post("./response/response1.json",function( data ){
+					
+					var table = "<table>";
+					$.each(data, function(i, item){
+						
+						if(i == 0 ){
+							
+							table += "<thead>";
+							$.each(item, function(i2, item2){
+							
+								table += "<th>"+i2+" - tb 1</th>";
+							
+							});
+							table += "</thead>";
+							table += "<tbody>";
+						}
+						table += "<tr>";
+						$.each(item, function(i2, item2){
+							
+							table += "<td>"+item2+"</td>";
+							
+						});
+						table += "</tr>";
+						
+						
+					});
+					table += "</tbody></table>";
+					$("#content").html(table);
+					
+				},"json");
+				
+			});
+			$("#tb2").click(function(){
+				
+				$.post("./response/response2.json",function( data ){
+					
+					var table = "<table>";
+					$.each(data, function(i, item){
+						
+						if(i == 0 ){
+							
+							table += "<thead>";
+							$.each(item, function(i2, item2){
+							
+								table += "<th>"+i2+" - tb 2</th>";
+							
+							});
+							table += "</thead>";
+							table += "<tbody>";
+						}
+						table += "<tr>";
+						$.each(item, function(i2, item2){
+							
+							table += "<td>"+item2+"</td>";
+							
+						});
+						table += "</tr>";
+						
+						
+					});
+					table += "</tbody></table>";
+					$("#content").html(table);
+					
+				},"json");
+				
+			});
+			$("#tb3").click(function(){
+				
+				$.post("./response/response3.json",function( data ){
+					
+					var table = "<table>";
+					$.each(data, function(i, item){
+						
+						if(i == 0 ){
+							
+							table += "<thead>";
+							$.each(item, function(i2, item2){
+							
+								table += "<th>"+i2+" - tb 3</th>";
+							
+							});
+							table += "</thead>";
+							table += "<tbody>";
+						}
+						table += "<tr>";
+						$.each(item, function(i2, item2){
+							
+							table += "<td>"+item2+"</td>";
+							
+						});
+						table += "</tr>";
+						
+						
+					});
+					table += "</tbody></table>";
+					$("#content").html(table);
+					
+				},"json");
+				
+			});
+			$("#tb4").click(function(){
+				
+				$.post("./response/response4.json",function( data ){
+					
+					var table = "<table>";
+					$.each(data, function(i, item){
+						
+						if(i == 0 ){
+							
+							table += "<thead>";
+							$.each(item, function(i2, item2){
+							
+								table += "<th>"+i2+" - tb 4</th>";
+							
+							});
+							table += "</thead>";
+							table += "<tbody>";
+						}
+						table += "<tr>";
+						$.each(item, function(i2, item2){
+							
+							table += "<td>"+item2+"</td>";
+							
+						});
+						table += "</tr>";
+						
+						
+					});
+					table += "</tbody></table>";
+					$("#content").html(table);
+					
+				},"json");
+				
+			});
+			$("#tb5").click(function(){
+				
+				$.post("./response/response5.json",function( data ){
+					
+					var table = "<table>";
+					$.each(data, function(i, item){
+						
+						if(i == 0 ){
+							
+							table += "<thead>";
+							$.each(item, function(i2, item2){
+							
+								table += "<th>"+i2+" - tb 5</th>";
+							
+							});
+							table += "</thead>";
+							table += "<tbody>";
+						}
+						table += "<tr>";
+						$.each(item, function(i2, item2){
+							
+							table += "<td>"+item2+"</td>";
+							
+						});
+						table += "</tr>";
+						
+						
+					});
+					table += "</tbody></table>";
+					$("#content").html(table);
+					
+				},"json");
+				
+			});
+		});
+	</script>
+</html>
