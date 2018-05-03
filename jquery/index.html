@@ -19,7 +19,7 @@
 		$(function(){
 			$("#tb1").click(function(){
 				
-				$.post("./response/response1.json",function( data ){
+				$.get("./response/response1.json",function( data ){
 					
 					var table = "<table>";
 					$.each(data, function(i, item){
@@ -53,7 +53,7 @@
 			});
 			$("#tb2").click(function(){
 				
-				$.post("./response/response2.json",function( data ){
+				$.get("./response/response2.json",function( data ){
 					
 					var table = "<table>";
 					$.each(data, function(i, item){
@@ -87,7 +87,7 @@
 			});
 			$("#tb3").click(function(){
 				
-				$.post("./response/response3.json",function( data ){
+				$.get("./response/response3.json",function( data ){
 					
 					var table = "<table>";
 					$.each(data, function(i, item){
@@ -121,7 +121,7 @@
 			});
 			$("#tb4").click(function(){
 				
-				$.post("./response/response4.json",function( data ){
+				$.get("./response/response4.json",function( data ){
 					
 					var table = "<table>";
 					$.each(data, function(i, item){
@@ -155,7 +155,7 @@
 			});
 			$("#tb5").click(function(){
 				
-				$.post("./response/response5.json",function( data ){
+				$.get("./response/response5.json",function( data ){
 					
 					var table = "<table>";
 					$.each(data, function(i, item){
